@@ -1,0 +1,113 @@
+* {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    color: #787878;
+    box-sizing: border-box;
+}
+:root {
+    --ratio1440: calc(100vw / 1440);
+    --ratio768: calc(100vw / 768);
+}
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 250px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: 80px;
+    width: 100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.header__side {
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+}
+.header-side__logo {
+    margin-top: 18px;
+    margin-bottom: 12px;
+    margin-left: 30px;
+}
+.header-side__heading {
+    align-self: center;
+    font-family: 'Inter';
+    margin-left: 30px;
+    font-size: calc(36 * min(var(--ratio1440) * 1.3,1px));
+    line-height: calc(36 * min(var(--ratio1440) * 1.3,1px));   
+}
+.header-side__item_registration {
+    margin-right: 28px;
+}
+.header-side__item {
+    align-self: center;
+    font-family: 'Inter';
+    font-size: 24px;
+    text-decoration: none;
+}
+.header-side__item_entrance {
+    margin-right: 43px;
+}
+.header-side__item_active {
+    color: #1A226B;
+}
+.main {
+    background: #FFFFFF;
+}
+.main__form_entrance {
+    margin-top: calc(125px - 125 * 0.77 * (1px - min(var(--ratio1440),1px)));
+    margin-left: calc(437px - 437 * 1.734 * (1px - min(var(--ratio1440),1px)));
+    margin-bottom: calc(233px + 233 * 0.415 * (1px - min(var(--ratio1440),1px)));
+    margin-right: calc(408px - 408 * 1.704 * (1px - min(var(--ratio1440),1px)));
+}
+.main__form {
+    display: flex;
+    flex-direction: column;
+    padding: 26px 45px 37px;
+    border: none;
+    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
+    z-index: 10;
+}
+.main-form__caption_big {
+    align-self: center;
+    margin-top: 0px;
+    margin-bottom: 4px;
+    font-size: 50px;
+    line-height: 50px;
+}
+.main-form__label_entrance {
+    margin-bottom: 3px;
+}
+.main-form__label {
+    margin-top: 11px;
+    font-size: 16px;
+    line-height: 16px;
+}
+.main-form__input {
+    align-self: stretch;
+    height: 49px;
+    padding-top: 7px;
+    padding-bottom: 6px;
+    padding-left: 15px;
+    font-size: 28px;
+    line-height: 36px;
+    border: 1px solid #787878;
+    outline-color: black;
+}
+.main-form__button_entrance {
+    margin-top: 52px;
+}
+.main-form__button {
+    align-self: center;
+    margin-top: 52px;
+    width: 180px;
+    height: 52px;
+    line-height: 16px;
+    font-size: 24px;
+    background: #1A226B;
+    border: none;
+    color: #FFFFFF;
+}
